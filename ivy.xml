@@ -1,0 +1,10 @@
+<ivy-module version="2.0">
+  <info organisation="mobi.eyeline.mobilizer" module="sads-ccc"/>
+  <dependencies>
+
+    <dependency org="org.xerial" name="sqlite-jdbc" rev="3.15.1"/>
+    <dependency org="log4j" name="log4j" rev="1.2.16"/>
+    <dependency org="javax.servlet" name="servlet-api" rev="2.5"/>
+
+  </dependencies>
+</ivy-module>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+  <listener>
+    <listener-class>com.eyelinecom.whoisd.sads2.ccc.listeners.CccInitializer</listener-class>
+  </listener>
+
+  <context-param>
+    <param-name>mobilizer-url</param-name>
+    <param-value>http://localhost:8080/</param-value>
+    <!--<param-value>http://devel.globalussd.mobi/</param-value>-->
+  </context-param>
+  <servlet>
+    <servlet-name>bot</servlet-name>
+    <servlet-class>com.eyelinecom.whoisd.sads2.ccc.servlet.BotServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>com.eyelinecom.whoisd.sads2.ccc.servlet.AdminServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>operator</servlet-name>
+    <servlet-class>com.eyelinecom.whoisd.sads2.ccc.servlet.OperatorServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>user</servlet-name>
+    <servlet-class>com.eyelinecom.whoisd.sads2.ccc.servlet.UserServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>bot</servlet-name>
+    <url-pattern>/bot</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>operator</servlet-name>
+    <url-pattern>/operator</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>user</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+
+</web-app>
